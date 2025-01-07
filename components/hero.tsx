@@ -13,8 +13,8 @@ const Hero = () => {
 
 			{/* Tekst na wierzchu */}
 			<div className='absolute inset-0 z-20 px-6 md:px-12 pointer-events-none'>
-				<div className=' mx-auto text-left flex justify-center items-start h-full flex-col  text-white   max-w-screen-2xl gap-6'>
-					<h1 className=' font-heading md:w-1/2 text-4xl md:text-6xl leading-[1.5]'>
+				<div className=' mx-auto text-left flex justify-center items-start h-full flex-col  text-white   max-w-screen-xl gap-6'>
+					<h1 className=' font-heading md:w-1/2 text-4xl md:text-6xl leading-[1.5] uppercase'>
 						Eksperci w 
 						Transporcie i Spedycji
 					</h1>

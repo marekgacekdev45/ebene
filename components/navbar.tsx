@@ -24,7 +24,10 @@ const NavLinks = () => {
 
 const Navbar = () => {
 	return (
-		<nav className='bg-white py-4 shadow-md sticky top-0 z-50'>
+		<nav className='bg-white py-4  sticky top-0 z-50 '>
+			<div className='max-w-screen-xl mx-auto'>
+
+			
 			<div className='container mx-auto px-4 flex justify-between items-center'>
 				<div className='flex items-center space-x-6'>
 					<Link href='/' className='text-xl font-bold'>
@@ -56,6 +59,7 @@ const Navbar = () => {
 						</SheetHeader>
 					</SheetContent>
 				</Sheet>
+			</div>
 			</div>
 		</nav>
 	)
