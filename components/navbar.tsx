@@ -12,8 +12,8 @@ const NavLinks = () => {
 			<Link href='/#o-nas' className='text-left hover:text-accent duration-150 font-semibold'>
 				O nas
 			</Link>
-			<Link href='/#uslugi' className='text-left hover:text-accent duration-150 font-semibold'>
-				Usługi
+			<Link href='/#oferta' className='text-left hover:text-accent duration-150 font-semibold'>
+				Oferta
 			</Link>
 			<Link href='/#kontakt' className='text-left hover:text-accent duration-150 font-semibold'>
 				Kontakt

@@ -62,7 +62,7 @@ const offers = [
 
 const Offer = () => {
 	return (
-		<section className=' mt-12 mb-6 lg:mt-24 lg:mb-12 px-6 md:px-12 2xl:px-0'>
+		<section id='oferta' className=' mt-12 mb-6 lg:mt-24 lg:mb-12 px-6 md:px-12 2xl:px-0'>
 			<div className='max-w-screen-xl mx-auto flex flex-col justify-center items-center text-center gap-6'>
 				<p className='preheading'>Oferta</p>
 				<h2 className='heading'>Nasza Oferta Usług Transportowych i Spedycyjnych</h2>

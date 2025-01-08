@@ -3,6 +3,8 @@ import { font_heading, font_text } from '@/app/utils/fonts'
 import './globals.css'
 import Topbar from '@/components/topbar'
 import Navbar from '@/components/navbar'
+import ScrollToTop from '@/components/scroll-to-top'
+import Footer from '@/components/footer'
 
 export const metadata: Metadata = {
 	title: 'Create Next App',
@@ -21,6 +23,9 @@ export default function RootLayout({
 				<Navbar />
 
 				<main>{children}</main>
+
+				<Footer />
+				<ScrollToTop />
 			</body>
 		</html>
 	)
