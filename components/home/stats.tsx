@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 const Stats = () => {
 	return (
-		<section className='my-20 py-24  relative'>
+		<section className='mt-12 my-6 lg:mt-24 lg:mb-12 py-24  relative'>
 			<Image
 				src='/background.jpg'
 				alt='background'
