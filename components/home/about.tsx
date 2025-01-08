@@ -4,7 +4,7 @@ import React from 'react'
 
 const About = () => {
 	return (
-		<section className='max-w-screen-xl mx-auto mt-12 mb-6 lg:mt-24 lg:mb-12 grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-12 2xl:px-0'>
+		<section id='o-nas' className='max-w-screen-xl mx-auto mt-12 mb-6 lg:mt-24 lg:mb-12 grid grid-cols-1 lg:grid-cols-2 gap-12 px-6 md:px-12 2xl:px-0'>
 			<div className="relative max-w-[600px] max-h-[600px] mx-auto">
   <Image
     src="/hero-1.jpeg"
