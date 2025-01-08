@@ -1,6 +1,6 @@
 import Link from 'next/link'
-import Carousel from './carousel'
-import { Button } from './ui/button'
+import Carousel from '@/components/carousel'
+import { Button } from '@/components//ui/button'
 
 const Hero = () => {
 	return (
