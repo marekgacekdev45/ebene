@@ -1,12 +1,6 @@
-import { MonitorCog, Star, Globe, Handshake, Clock } from 'lucide-react'
-import React from 'react'
+import { Feature } from '@/app/utils/interface'
 
-interface Feature {
-	id: number
-	icon: string
-	title: string
-	description: string
-}
+import { MonitorCog, Star, Globe, Handshake, Clock, User } from 'lucide-react'
 
 const iconMapping: Record<string, React.ElementType> = {
 	Star: Star,
@@ -14,6 +8,7 @@ const iconMapping: Record<string, React.ElementType> = {
 	Handshake: Handshake,
 	Clock: Clock,
 	MonitorCog: MonitorCog,
+	User: User,
 }
 
 const FeatureItem = ({ feature: { icon, title, description } }: { feature: Feature }) => {

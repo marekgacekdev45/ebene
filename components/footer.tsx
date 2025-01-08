@@ -1,14 +1,14 @@
-import { Mail, MapPin, Phone } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
-import FooterYear from './footer-year'
+import Image from 'next/image'
+
+import { Mail, MapPin, Phone } from 'lucide-react'
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear()
+	const currentYear = new Date().getFullYear()
 	return (
 		<footer className='bg-primary py-12 text-white'>
 			<div className=' justify-center items-center grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-screen-xl mx-auto gap-12 lg:gap-6 px-6 md:px-12 2xl:px-0'>
-				<div className='sm:col-span-2 flex justify-center items-center sm:justify-start sm:justify-start'>
+				<div className='sm:col-span-2 flex justify-center items-center sm:justify-start '>
 					<Link href='/' className='text-xl font-bold'>
 						<Image src='/logo-light.png' alt='Ebene' width={160} height={32} />
 					</Link>
@@ -28,13 +28,17 @@ const Footer = () => {
 							</div>
 						</li>
 						<li>
-							<Link href='#' className='flex flex-col sm:flex-row text-center sm:text-left justify-start items-center gap-2 text-sm'>
+							<Link
+								href='#'
+								className='flex flex-col sm:flex-row text-center sm:text-left justify-start items-center gap-2 text-sm group'>
 								<Phone className='size-5 text-accent' />
 								<span className='group-hover:text-accent duration-150'>+48 500 499 600</span>
 							</Link>
 						</li>
 						<li>
-							<Link href='#' className='flex flex-col sm:flex-row text-center sm:text-left justify-start items-center gap-2 text-sm'>
+							<Link
+								href='#'
+								className='flex flex-col sm:flex-row text-center sm:text-left justify-start items-center gap-2 text-sm group'>
 								<Mail className='size-5 text-accent' />
 								<span className='group-hover:text-accent duration-150'>ebene@ebene.com.pl</span>
 							</Link>
@@ -80,7 +84,7 @@ const Footer = () => {
 			</div>
 
 			<div className='border-t max-w-screen-xl mx-auto border-t-gray-500 mt-12 pt-12 flex justify-between items-center px-6 md:px-12 2xl:px-0'>
-            <span className='text text-sm'>© {currentYear} Ebene</span>
+				<span className='text text-sm'>© {currentYear} Ebene</span>
 				<Link href='#' className='text-sm'>
 					<Image src='/marketingmix.png' alt='marketingmix' width={125} height={50} />
 				</Link>

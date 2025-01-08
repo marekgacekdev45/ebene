@@ -47,17 +47,17 @@ export function ProfileForm() {
 
 	return (
 		<Form {...form}>
-			<form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
+			<form onSubmit={form.handleSubmit(onSubmit)} className='space-y-5'>
 				<FormField
 					control={form.control}
 					name='name'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Imię i nazwisko</FormLabel>
+							<FormLabel className='font-heading text-base'>Imię i nazwisko</FormLabel>
 							<FormControl>
 								<Input {...field} />
 							</FormControl>
-							<FormMessage />
+							<FormMessage className='text !text-xs'/>
 						</FormItem>
 					)}
 				/>
@@ -66,11 +66,11 @@ export function ProfileForm() {
 					name='email'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Email</FormLabel>
-							<FormControl>
+							<FormLabel className='font-heading text-base'>Email</FormLabel>
+							<FormControl >
 								<Input {...field} />
 							</FormControl>
-							<FormMessage />
+							<FormMessage className='text !text-xs'/>
 						</FormItem>
 					)}
 				/>
@@ -79,11 +79,11 @@ export function ProfileForm() {
 					name='phone'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Phone</FormLabel>
+							<FormLabel className='font-heading text-base'>Telefon</FormLabel>
 							<FormControl>
 								<Input {...field} />
 							</FormControl>
-							<FormMessage />
+							<FormMessage className='text !text-xs'/>
 						</FormItem>
 					)}
 				/>
@@ -92,11 +92,11 @@ export function ProfileForm() {
 					name='message'
 					render={({ field }) => (
 						<FormItem>
-							<FormLabel>Wiadomość</FormLabel>
+							<FormLabel className='font-heading text-base'>Wiadomość</FormLabel>
 							<FormControl>
 								<Textarea {...field} className='min-h-[150px] max-h-[150px]'/>
 							</FormControl>
-							<FormMessage />
+							<FormMessage className='text !text-xs'/>
 						</FormItem>
 					)}
 				/>

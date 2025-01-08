@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-	@apply font-text antialiased overflow-x-hidden;
-}
-
 @layer base {
 	:root {
 		--background: 0 0% 100%;
@@ -67,22 +63,41 @@ body {
 	* {
 		@apply border-border;
 	}
-	html{
-		@apply scroll-smooth scroll-pt-32
+	html {
+		@apply scroll-smooth scroll-pt-32;
 	}
 	body {
-		@apply bg-background text-foreground tracking-wide;
+		@apply bg-background text-foreground tracking-wide font-text antialiased overflow-x-hidden;
 	}
 }
 
 @layer utilities {
-  .preheading{
-    @apply font-heading text-accent font-semibold text-lg
-  }
+	.section {
+		/* @apply  mx-auto mt-12 mb-6 lg:mt-24 lg:mb-12  px-6 md:px-12 2xl:px-0 */
+		@apply mx-auto mt-12 mb-6 lg:mt-24 lg:mb-12;
+	}
+	.wrapper {
+		@apply px-6 md:px-12 2xl:px-0 max-w-screen-xl  mx-auto;
+	}
+
+	.preheading {
+		@apply font-heading text-accent font-semibold text-lg;
+	}
 	.heading {
 		@apply font-heading font-medium text-5xl leading-tight;
 	}
 	.text {
 		@apply font-light leading-normal;
 	}
+
+	.contact-card {
+		@apply shadow-lg  flex flex-col justify-center items-center border-b border-accent py-6  gap-3
+	}
+	.contact-card__icon{
+		@apply text-accent size-10 group-hover:scale-105 duration-150
+	}
+	.contact-card__text{
+		@apply group-hover:text-accent duration-150
+	}
+
 }

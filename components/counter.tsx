@@ -3,19 +3,19 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 const Counter = ({
-    target,
+	target,
 	suffix,
 	prefix,
 	text,
-	speed =50,
-    step = 1
+	speed = 50,
+	step = 1,
 }: {
-    target: number
+	target: number
 	suffix?: string
 	prefix?: string
 	text: string
 	speed?: number
-    step?:number
+	step?: number
 }) => {
 	const [count, setCount] = useState(0)
 	const [isVisible, setIsVisible] = useState(false)
@@ -57,12 +57,12 @@ const Counter = ({
 	}, [isVisible, speed])
 
 	return (
-		<>
+		<div className='flex flex-col justify-start items-center text-center gap-2'>
 			<span ref={counterRef} className='font-bold text-accent font-heading text-6xl '>
 				{prefix} {count} {suffix}
 			</span>
 			<p className='text-white font-semibold text-xl'>{text}</p>
-		</>
+		</div>
 	)
 }
 

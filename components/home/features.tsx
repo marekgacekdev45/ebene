@@ -1,12 +1,7 @@
-import React from 'react'
-import FeatureItem from '@/components/feature-item'
+import { Feature } from '@/app/utils/interface'
 
-interface Feature {
-	id: number
-	icon: string
-	title: string
-	description: string
-}
+import FeatureItem from '@/components/feature-item'
+import Heading from '@/components/heading'
 
 const FeaturesList = [
 	{
@@ -41,12 +36,9 @@ const FeaturesList = [
 
 const Features = () => {
 	return (
-		<section className=' mt-12 mb-6 lg:mt-24 lg:mb-12 px-6 md:px-12 2xl:px-0 max-w-screen-xl mx-auto space-y-16'>
+		<section className='section wrapper space-y-16'>
 			<div className='grid grid-cols-1 lg:grid-cols-2 gap-y-6 lg:gap-y-0 gap-x-12'>
-				<div className='space-y-2'>
-					<p className='preheading'>Dlaczego my?</p>
-					<h2 className='heading'>Poznaj Mocne Strony Ebene</h2>
-				</div>
+				<Heading preheading='Dlaczego my?' heading='Poznaj Mocne Strony Ebene' />
 				<p className='text'>
 					W Ebene oferujemy nie tylko kompleksowe usługi transportowe, spedycyjne i logistyczne, ale także gwarantujemy
 					najwyższą jakość obsługi i indywidualne podejście do każdego klienta. Nasze wieloletnie doświadczenie,
@@ -56,11 +48,9 @@ const Features = () => {
 			</div>
 
 			<div className='grid grid-cols-1 md:grid-cols-2 gap-12'>
-        {FeaturesList.map((feature: Feature) => (
-          <FeatureItem key={feature.id} feature={feature} />
-        ))}
-				
-				
+				{FeaturesList.map((feature: Feature) => (
+					<FeatureItem key={feature.id} feature={feature} />
+				))}
 			</div>
 		</section>
 	)

@@ -1,18 +1,16 @@
 'use client'
 
-import React from 'react'
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react'
+import Image from 'next/image'
 
-// Import Swiper styles
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectFade, Pagination, Autoplay } from 'swiper/modules'
+
 import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-// import required modules
-import { EffectFade, Navigation, Pagination, Autoplay } from 'swiper/modules'
-import Image from 'next/image'
+const images = ['/ebene-hero-1.webp', '/ebene-hero-2.webp', '/ebene-hero-3.webp']
 
 const Carousel = () => {
 	return (
@@ -26,21 +24,23 @@ const Carousel = () => {
 				}}
 				loop={true}
 				modules={[EffectFade, Autoplay]}
-				className='w-full h-[90vh] relative flex justify-center items-center'>
-				<SwiperSlide>
-					<Image src='/hero-1.jpeg' alt="daas" width={1920} height={720} className='w-full h-full object-cover' />
-				</SwiperSlide>
-				<SwiperSlide>
-					<Image src='/hero-2.jpeg' alt="daas" width={1920} height={720} className='w-full h-full object-cover' />
-				</SwiperSlide>
-
-				
-				
-				
+				className='relative flex justify-center items-center w-full h-[90vh] -z-20'>
+				{images.map((image, index) => (
+					<SwiperSlide key={index}>
+						<Image
+							src={image}
+							alt='zdjęcie w tle | Ebene - Transport i Spedycja'
+							width={1920}
+							height={1040}
+							className='w-full h-full object-cover'
+							quality={50}
+							priority
+						/>
+					</SwiperSlide>
+				))}
 			</Swiper>
 		</>
 	)
 }
-
 
 export default Carousel

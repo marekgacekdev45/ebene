@@ -24,7 +24,7 @@ const NavLinks = () => {
 
 const Navbar = () => {
 	return (
-		<nav className='bg-white py-4  sticky top-0 z-50 '>
+		<nav className='bg-white py-4  sticky top-0 z-50 shadow-lg'>
 			<div className='max-w-screen-xl mx-auto'>
 
 			
