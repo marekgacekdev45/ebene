@@ -2,11 +2,25 @@ import Link from 'next/link'
 import Carousel from '@/components/carousel'
 import { Button } from '@/components/ui/button'
 
+import HeroBg from '@/public/ebene-hero-1.webp'
+import Image from 'next/image'
 
 const Hero = () => {
 	return (
-		<div className='relative w-full h-[90vh]'>
-			<Carousel />
+		<div className='relative w-full h-[80vh] sm:h-[90vh]'>
+			<div className='hidden sm:flex'>
+				<Carousel />
+			</div>
+			<Image
+				src={HeroBg}
+				alt='zdjęcie w tle | Ebene - Transport i Spedycja'
+				width={648}
+				height={500}
+				className='w-full h-full object-cover sm:hidden'
+				quality={50}
+				priority
+				sizes='100vw'
+			/>
 
 			<div className='bg-black inset-0 absolute z-10 opacity-50 pointer-events-none'></div>
 
