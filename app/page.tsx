@@ -2,7 +2,7 @@
 // import About from '@/components/home/about'
 // import Stats from '@/components/home/stats'
 // import Offer from '@/components/home/offer'
-// import Features from '@/components/home/features'
+import Features from '@/components/home/features'
 // import CTA from '@/components/home/cta'
 // import Contact from '@/components/home/contact'
 
