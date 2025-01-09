@@ -17,6 +17,7 @@ const CTA = () => {
 				className='absolute inset-0 -z-20 w-full h-full object-cover'
 				placeholder='blur'
 				quality={60}
+				sizes='100vw'
 			/>
 
 			<div className='bg-black inset-0 absolute -z-10 opacity-60 pointer-events-none'></div>

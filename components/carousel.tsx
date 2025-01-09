@@ -24,7 +24,7 @@ const Carousel = () => {
 				}}
 				loop={true}
 				modules={[EffectFade, Autoplay]}
-				className='relative flex justify-center items-center w-full h-[90vh] -z-20'>
+				className='relative  flex justify-center items-center w-full h-[90vh] -z-20'>
 				{images.map((image, index) => (
 					<SwiperSlide key={index}>
 						<Image
@@ -35,6 +35,7 @@ const Carousel = () => {
 							className='w-full h-full object-cover'
 							quality={50}
 							priority
+							sizes="100vw"
 						/>
 					</SwiperSlide>
 				))}
