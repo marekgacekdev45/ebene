@@ -4,7 +4,7 @@
 // import Offer from '@/components/home/offer'
 // import Features from '@/components/home/features'
 // import CTA from '@/components/home/cta'
-import Contact from '@/components/home/contact'
+// import Contact from '@/components/home/contact'
 
 export default function Home() {
 	return (
@@ -13,9 +13,9 @@ export default function Home() {
 			{/* <About /> */}
 			{/* <Stats /> */}
 			{/* <Offer /> */}
-			{/* <Features /> */}
+			<Features />
 			{/* <CTA /> */}
-			<Contact />
+			{/* <Contact /> */}
 		</>
 	)
 }
