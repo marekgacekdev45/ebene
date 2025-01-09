@@ -37,6 +37,7 @@ const About = () => {
 					width={600}
 					height={600}
 					placeholder='blur'
+					sizes="(max-width: 768px) 100vw, 600px"
 					quality={60}
 				/>
 				<Image
@@ -46,6 +47,7 @@ const About = () => {
 					width={350}
 					height={350}
 					placeholder='blur'
+					sizes="(min-width: 768px) 350px"
 					quality={60}
 				/>
 			</div>
